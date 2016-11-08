@@ -19,7 +19,7 @@ public:
   static constexpr bool verbose = false;
   static constexpr bool verboseDevInit = false;
   static constexpr bool silent = true;
-  static constexpr bool csvFormat = true;
+  static constexpr bool csvFormat = false;
   
   // PseudoTree Construction (Default parameters - 
   // can be superseeded by input)

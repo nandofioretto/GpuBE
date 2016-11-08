@@ -60,39 +60,19 @@ int main(int argc, char **argv) {
   solver->solve();
   wallclock.pause();
 
-  if (!Preferences::silent) {
-    std::cout << solver->to_string() << '\n';
-    std::cout << "Init Time : "   << initTimer.getElapsed() << " ms " << std::endl;      
-    std::cout << "wc Time: " << wallclock.getElapsed() << " ms " << std::endl;
-    std::cout << "sm Time: " << solver->getSimulatedTime() << " ms" << std::endl;
-	std::cout << "gpu mem transfer Time: " << Gpu::Timer::getTimeMs() << " ms" << std::endl;
-    std::cout << "Util   : " << solver->getProblemUtil() << std::endl;
-    // std::cout << "Problem Cost: " << Problem::computeUtil() << std::endl;
-  }
-  else if (Preferences::csvFormat) {
+  if (Preferences::csvFormat) {
 	std::cout << initTimer.getElapsed() << "\t";
     std::cout << wallclock.getElapsed() << "\t";
     std::cout << solver->getSimulatedTime() << "\t";
 	std::cout << Gpu::Timer::getTimeMs() << " \t";
     std::cout << solver->getProblemUtil() << std::endl;
-	
-	// size_t maxProjTime = 0, maxAggrTime = 0, sumProjTime = 0, sumAggrTime = 0;
-	// double avgProjTime = 0, avgAggrTime = 0;
-	//
-	// for (size_t t : solver->getUtilPhaseProjTime()) {
-	//           maxProjTime = std::max(maxProjTime, t);
-	// 	sumProjTime += t;
-	// }
-	// avgProjTime = sumProjTime / (double)Problem::getNbAgents();
-	//
-	// for (size_t t : solver->getUtilPhaseAggrTime()) {
-	//           maxAggrTime = std::max(maxAggrTime, t);
-	// 	sumAggrTime += t;
-	// }
-	// avgAggrTime = sumAggrTime / (double)Problem::getNbAgents();
-	//
-	// std::cout << maxAggrTime << "\t" << sumAggrTime << "\t" << avgAggrTime << "\t"
-	// 	 << maxProjTime << "\t" << sumProjTime << "\t" << avgProjTime << "\n";
+  } else {
+    std::cout << solver->to_string() << '\n';
+    std::cout << "Init Time : "   << initTimer.getElapsed() << " ms " << std::endl;      
+    std::cout << "wc Time: " << wallclock.getElapsed() << " ms " << std::endl;
+    std::cout << "sm Time: " << solver->getSimulatedTime() << " ms" << std::endl;
+	std::cout << "gpu mem transfer Time: " << Gpu::Timer::getTimeMs() << " ms" << std::endl;
+    std::cout << "Util   : " << solver->getProblemUtil() << std::endl;  	
   }
 
   Gpu::Allocator::freeAll();

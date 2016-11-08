@@ -2,9 +2,11 @@
 This code implements an inference-based algorithm which exploits Graphical Processing Units (GPUs) to speed up the resolution of exact and approximated inference-based algorithms for discrete optimization (e.g., WCSPs)
 For details, please refer to the original paper:
 
-Ferdinando Fioretto, Tiep Le, Enrico Pontelli, William Yeoh, Tran Cao Son
-[Exploiting GPUs in Solving (Distributed) Constraint Optimization Problems with Dynamic Programming](http://link.springer.com/chapter/10.1007%2F978-3-319-23219-5_9), In proceeding of CP 2015.
+Ferdinando Fioretto, Enrico Pontelli, William Yeoh, and Rina Dechter
+[Accelerating Exact and Approximate Inference for (Distributed) Discrete Optimization with GPUs](https://arxiv.org/abs/1608.05288), CoRR abs/1608.05288 (2016). 
 
+<!-- Ferdinando Fioretto, Tiep Le, Enrico Pontelli, William Yeoh, Tran Cao Son
+[Exploiting GPUs in Solving (Distributed) Constraint Optimization Problems with Dynamic Programming](http://link.springer.com/chapter/10.1007%2F978-3-319-23219-5_9), In proceeding of CP 2015. -->
 
 Compiling:
 ------------
@@ -39,4 +41,4 @@ To execute GpuBE you need to specify a file format (currently [xcsp](http://arxi
 
 Example:
 
-	cudaBE --format=xml ../test/a10.xml --agt=gpuMiniBE 8 
+	cudaBE --format=wcsp test/8queens.wcsp --agt=gpuMiniBE 8
