@@ -49,9 +49,9 @@ fioretto@umich.edu
 
 Ferdinando Fioretto
 
-Department of Industrial and Operations Engineering
-University of Michigan
-G827 IOE
+Department of Industrial and Operations Engineering<br>
+University of Michigan<br>
+G827 IOE<br>
 Ann Arbor, MI 48109 - U.S.A.
 
 
