@@ -42,3 +42,29 @@ To execute GpuBE you need to specify a file format (currently [xcsp](http://arxi
 Example:
 
 	cudaBE --format=wcsp test/8queens.wcsp --agt=gpuMiniBE 8
+
+
+## Contacts
+fioretto@umich.edu 
+
+Ferdinando Fioretto
+
+Department of Industrial and Operations Engineering
+University of Michigan
+G827 IOE
+Ann Arbor, MI 48109 - U.S.A.
+
+
+## References
+Fioretto, Enrico Pontelli, William Yeoh, and Rina Dechter
+[Accelerating Exact and Approximate Inference for (Distributed) Discrete Optimization with GPUs](https://arxiv.org/abs/1608.05288), CoRR abs/1608.05288 (2016). 
+
+Ferdinando Fioretto, Tiep Le, Enrico Pontelli, William Yeoh, Tran Cao Son
+[Exploiting GPUs in Solving (Distributed) Constraint Optimization Problems with Dynamic Programming](http://link.springer.com/chapter/10.1007%2F978-3-319-23219-5_9), In proceedings of the _International Conference of Principles and Practice of Constraint Programming (CP)_, 2015.
+
+Ferdinando Fioretto, William Yeoh and Enrico Pontelli
+[A Dynamic Programming-Based MCMC Framework for Solving DCOPs with GPUs](http://link.springer.com/chapter/10.1007%2F978-3-319-44953-1_51). In proceedings of the _International Conference of Principles and Practice of Constraint Programming (CP)_, 2016.
+
+Ferdinando Fioretto, William Yeoh and Enrico Pontelli. 
+[Multi-Variable Agent Decomposition for DCOPs](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12093). 
+In Proceedings of the _AAAI Conference on Artificial Intelligence (AAAI)_, 2016. 
