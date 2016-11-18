@@ -56,7 +56,7 @@ Ann Arbor, MI 48109 - U.S.A.
 
 
 ## References
-Fioretto, Enrico Pontelli, William Yeoh, and Rina Dechter
+Ferdinando Fioretto, Enrico Pontelli, William Yeoh, and Rina Dechter
 [Accelerating Exact and Approximate Inference for (Distributed) Discrete Optimization with GPUs](https://arxiv.org/abs/1608.05288), CoRR abs/1608.05288 (2016). 
 
 Ferdinando Fioretto, Tiep Le, Enrico Pontelli, William Yeoh, Tran Cao Son
